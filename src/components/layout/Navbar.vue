@@ -53,22 +53,17 @@
         <a
           href="#"
           class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-          >Download</a
-        >
+          >Download</a>
       </div>
     </div>
   </nav>
 </template>
 
-<script setup>
-import { defineProps, reactive } from "vue";
-
-defineProps({
-  msg: String,
-});
-
-const state = reactive({ count: 0 });
+<script>
+export default {
+  name: "Navbar",
+  data() {
+    return {};
+  },
+};
 </script>
-
-<style scoped>
-</style>
